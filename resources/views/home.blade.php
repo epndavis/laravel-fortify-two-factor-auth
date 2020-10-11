@@ -10,4 +10,6 @@
     
     <button>Logout</button>
 </form>
+
+<two-factor-auth :enabled="{{ json_encode(auth()->user()->twoFactorAuthEnabled()) }}" />
 @endsection
